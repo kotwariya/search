@@ -1,6 +1,7 @@
 import React from 'react'
 import JSONData from '../JSONData';
-import { Icon } from 'semantic-ui-react'
+import {SearchRow} from './SearchRow';
+
 
 function SearchList({search,selected}) {
 
@@ -41,21 +42,10 @@ function SearchList({search,selected}) {
     }
     
     return (
-        <div class="music">
+        <div className="music">
             {
             filterArray.map((asset)=>{
-                  return  (<div className="song">
-                                <div className="info">
-                                    <div className="img first"/>
-                                        <div className="titles">
-                                            <h5><b>{asset.title}</b></h5>
-					                        <p><i>{asset.supplement_information}</i></p>
-                                            <p>{asset.description[0]}</p>
-                                            <b style={{ 'text-decoration-line': 'underline',fontSize:'11px'}}>{'Play Vocal'}</b><br/>
-                                            <b style={{ 'text-decoration-line': 'underline',fontSize:'11px', marginTop:'12px'}}>{'Lyrics(PDF)'}</b>
-                                        </div>
-                                    </div>
-                                </div>)
+                  return  (<SearchRow key={asset.title} asset={asset}/>);
                 })
                 }
         </div>
