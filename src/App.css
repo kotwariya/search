@@ -1,0 +1,57 @@
+html,
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.music {
+	background: #ffffff;
+	color: rgb(12, 11, 11);
+	margin-top: 20px;
+}
+.song {
+	height: 120px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.info {
+	display: flex;
+}
+.img {
+	width: 100px;
+	height: 100px;
+	background: red;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.img.first {
+	background: url(http://static.stereogum.com/blogs.dir/2/files/2011/12/Adele-21.jpg)
+		center center;
+	background-size: cover;
+}
+h5 {
+	margin: 0;
+	color: rgb(0, 0, 0);
+	font-size: 17px;
+	font-weight: 400;
+	margin-top: 5px;
+	margin-bottom: 7px;
+}
+
+p {
+	margin: 0;
+	color: white;
+	font-size: 13px;
+	color: #929292;
+}
+input {
+	display: inline;
+	margin-left: 10px;
+}
+.container-display {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
